@@ -103,11 +103,39 @@ python3 -u multi_reddit_one.py --conv_name hgt --cuda 0 --n_epoch 200 --pretrain
 Please consider citing the following paper when using our code for your application.
 
 ```bibtex
-@inproceedings{gpt_gnn,
-  title={GPT-GNN: Generative Pre-Training of Graph Neural Networks},
-  author={Ziniu Hu and Yuxiao Dong and Kuansan Wang and Kai-Wei Chang and Yizhou Sun},
-  booktitle={Proceedings of the 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
-  year={2020}
+@inproceedings{10.1145/3447548.3467450,
+author = {Han, Xueting and Huang, Zhenhuan and An, Bang and Bai, Jing},
+title = {Adaptive Transfer Learning on Graph Neural Networks},
+year = {2021},
+isbn = {9781450383325},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3447548.3467450},
+doi = {10.1145/3447548.3467450},
+abstract = {Graph neural networks (GNNs) is widely used to learn a powerful representation of
+graph-structured data. Recent work demonstrates that transferring knowledge from self-supervised
+tasks to downstream tasks could further improve graph representation. However, there
+is an inherent gap between self-supervised tasks and downstream tasks in terms of
+optimization objective and training data. Conventional pre-training methods may be
+not effective enough on knowledge transfer since they do not make any adaptation for
+downstream tasks. To solve such problems, we propose a new transfer learning paradigm
+on GNNs which could effectively leverage self-supervised tasks as auxiliary tasks
+to help the target task. Our methods would adaptively select and combine different
+auxiliary tasks with the target task in the fine-tuning stage. We design an adaptive
+auxiliary loss weighting model to learn the weights of auxiliary tasks by quantifying
+the consistency between auxiliary tasks and the target task. In addition, we learn
+the weighting model through meta-learning. Our methods can be applied to various transfer
+learning approaches, it performs well not only in multi-task learning but also in
+pre-training and fine-tuning. Comprehensive experiments on multiple downstream tasks
+demonstrate that the proposed methods can effectively combine auxiliary tasks with
+the target task and significantly improve the performance compared to state-of-the-art
+methods.},
+booktitle = {Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery &amp; Data Mining},
+pages = {565–574},
+numpages = {10},
+keywords = {graph neural networks, multi task learning, graph representation learning, transfer learning, GNN pre-training},
+location = {Virtual Event, Singapore},
+series = {KDD '21}
 }
 ```
 
