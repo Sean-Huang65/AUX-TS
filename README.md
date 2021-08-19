@@ -43,12 +43,12 @@ python pretrain_OAG.py --attr_type text --conv_name hgt --n_layers 3 --pretrain_
 ```
 
 
-The following commands use the pre-trained model as initialization and finetune on the paper-field classification task(one sims):
+The following commands use the pre-trained model as initialization and finetune on the paper-field classification task(one sim):
 ```bash
 python3 -u multi_OAG_PF_one.py --conv_name hgt --cuda 0 --n_epoch 500 --link_ratio 1 --attr_ratio 1 --w2v_dir <w2v_dir> --pretrain_model_dir <pretrain_model_dir> --data_dir <data_file> --model_dir <model_dir> --act_type sigmoid --n_batch 32 --use_pretrain
 ```
 
-The following commands use the pre-trained model as initialization and finetune on Reddit dataset(one sims):
+The following commands use the pre-trained model as initialization and finetune on Reddit dataset(one sim):
 ```bash
 python3 -u multi_reddit_one.py --conv_name hgt --cuda 0 --n_epoch 200 --pretrain_model_dir <pretrain_model_dir> --data_dir <data_dir> --model_dir <model_dir> --batch_size 200 --use_pretrain
 ```
