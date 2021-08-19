@@ -36,8 +36,6 @@ For pre-training, we provide arguments to control different modules for attribut
   --lr                             FLOAT   learning rate for gnn model.                         Default is 1e-3.
   --act_type                       STR     activation type for weighting model                  Default is sigmoid
 ```  
- 5e-4 (for fine-tuning).  
-```
 
 The following commands pretrain a 3-layer HGT over OAG-CS:
 ```bash
