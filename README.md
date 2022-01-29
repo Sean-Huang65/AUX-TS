@@ -10,7 +10,7 @@ We use datasets from [GPT-GNN](https://github.com/acbull/GPT-GNN).
 
 ## Setup
 
-This implementation is based on pytorch_geometric. To run the code, you need the following dependencies:
+This implementation is based on pytorch_geometric. To run the code, you will need the following dependencies:
 
 - [Pytorch 1.3.0](https://pytorch.org/)
 - [pytorch_geometric 1.3.2](https://pytorch-geometric.readthedocs.io/)
